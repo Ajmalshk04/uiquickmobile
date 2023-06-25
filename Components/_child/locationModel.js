@@ -28,11 +28,11 @@ const inputText =
 
   return (
     <div>
-        <div className="absolute top-0 left-0 w-full h-screen bg-gray-800 opacity-50 z-20">   
+        <div className="absolute top-0 left-0 z-20 w-full h-screen bg-gray-800 opacity-50">   
         </div>
-        <div className="absolute top-0 w-full flex flex-col items-center bg-white rounded-b-xl opacity-100 z-40">  
+        <div className="absolute top-0 z-40 flex flex-col items-center w-full bg-white opacity-100 rounded-b-xl">  
             <div className="w-full flex justify-between px-14 pt-4  border-b-[1px] border-gray-200">
-                <div><Image src={logo}/></div>
+                <div><Image alt="temp" src={logo}/></div>
                 <div className="text-gray-700 cursor-pointer"
                 // onClick={()=>{setLocationModal(true)}}
                 ><FaTimes size={30}/></div>
@@ -40,64 +40,64 @@ const inputText =
             <div className="pt-6">
                 <h1 className="text-xl font-semibold text-gray-600">Select Your City</h1>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-4 gap-y-0 py-6 px-10 text-sm">
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={mumbai}/>
+            <div className="flex flex-row flex-wrap items-center justify-center gap-4 px-10 py-6 text-sm gap-y-0">
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={mumbai}/>
                 <h1>Mumbai</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={delhi}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={delhi}/>
                 <h1>Delhi</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={pune}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={pune}/>
                 <h1>Pune</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={ahmedabad}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={ahmedabad}/>
                 <h1>Ahmedabad</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={hyderabad}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={hyderabad}/>
                 <h1>Hyderabad</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={kolkata}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={kolkata}/>
                 <h1>Kolkata</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={lucknow}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={lucknow}/>
                 <h1>Lucknow</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={patna}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={patna}/>
                 <h1>Patna</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={banglore}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={banglore}/>
                 <h1>Banglore</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={indore}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={indore}/>
                 <h1>Indore</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={chennai}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={chennai}/>
                 <h1>Chennai</h1>
             </div>
-            <div className="flex flex-col items-center justify-center w-28 p-2">
-                <Image src={jaipur}/>
+            <div className="flex flex-col items-center justify-center p-2 w-28">
+                <Image alt="temp" src={jaipur}/>
                 <h1>Jaipur</h1>
             </div>
             </div>
             <div>
             <div className="flex py-6">
                 <input type="text bg-gray-300" className={inputText} placeholder="Search city by name" />
-                    <button className="px-4 py-3 border-2 rounded-r-lg bg-blue-500"><FiSearch  size={20} className="text-white"/></button> 
+                    <button className="px-4 py-3 bg-blue-500 border-2 rounded-r-lg"><FiSearch  size={20} className="text-white"/></button> 
               </div>
             </div>
             <div>
-                <p className="text-blue-500 font-medium py-6"><Link href={"/"}><a>View All Cities</a></Link></p>
+                <p className="py-6 font-medium text-blue-500"><Link href={"/"}><a>View All Cities</a></Link></p>
             </div>
         </div>
     </div>
@@ -113,64 +113,64 @@ export default LocationModel;
 // <div>
 //       {/* second modal */}
 //       {showModal ? (
-//         <div className="mt-10 flex justify-center items-center flex-col w-1/2 rounded-lg shadow-xl h-auto p-2">
+//         <div className="flex flex-col items-center justify-center w-1/2 h-auto p-2 mt-10 rounded-lg shadow-xl">
 //           <div className="flex gap-4">
 //             <div>
-//                 <Image src={mumbai}/>
+//                 <Image alt="temp" src={mumbai}/>
 //                 <h1>Mumbai</h1>
 //             </div>
 //             <div>
-//                 <Image src={delhi}/>
+//                 <Image alt="temp" src={delhi}/>
 //                 <h1>Delhi</h1>
 //             </div>
 //             <div>
-//                 <Image src={pune}/>
+//                 <Image alt="temp" src={pune}/>
 //                 <h1>Pune</h1>
 //             </div>
 //             <div>
-//                 <Image src={ahmedabad}/>
+//                 <Image alt="temp" src={ahmedabad}/>
 //                 <h1>Ahmedabad</h1>
 //             </div>
 //             <div>
-//                 <Image src={hyderabad}/>
+//                 <Image alt="temp" src={hyderabad}/>
 //                 <h1>Hyderabad</h1>
 //             </div>
 //             <div>
-//                 <Image src={kolkata}/>
+//                 <Image alt="temp" src={kolkata}/>
 //                 <h1>Kolkata</h1>
 //             </div>
 //             <div>
-//                 <Image src={lucknow}/>
+//                 <Image alt="temp" src={lucknow}/>
 //                 <h1>Lucknow</h1>
 //             </div>
 //             <div>
-//                 <Image src={patna}/>
+//                 <Image alt="temp" src={patna}/>
 //                 <h1>Patna</h1>
 //             </div>
 //             <div>
-//                 <Image src={banglore}/>
+//                 <Image alt="temp" src={banglore}/>
 //                 <h1>Banglore</h1>
 //             </div>
 //             <div>
-//                 <Image src={indore}/>
+//                 <Image alt="temp" src={indore}/>
 //                 <h1>Indore</h1>
 //             </div>
 //             <div>
-//                 <Image src={chennai}/>
+//                 <Image alt="temp" src={chennai}/>
 //                 <h1>Chennai</h1>
 //             </div>
 //             <div>
-//                 <Image src={jaipur}/>
+//                 <Image alt="temp" src={jaipur}/>
 //                 <h1>Jaipur</h1>
 //             </div>
 //             {/* <button
-//               className="my-5 w-auto px-8 h-10 bg-blue-600 text-white rounded-md shadow hover:shadow-lg font-semibold"
+//               className="w-auto h-10 px-8 my-5 font-semibold text-white bg-blue-600 rounded-md shadow hover:shadow-lg"
 //               onClick={() => setShowModal(false)}
 //             >
 //               Claim Now
 //             </button>
 //             <button
-//               className=" w-auto px-12 my-5 border border-red-100 h-10 hover:bg-red-700 hover:text-white   rounded-md text-red-600  hover:shadow-lg font-semibold"
+//               className="w-auto h-10 px-12 my-5 font-semibold text-red-600 border border-red-100 rounded-md  hover:bg-red-700 hover:text-white hover:shadow-lg"
 //               onClick={() => setShowModal(false)}
 //             >
 //               Close

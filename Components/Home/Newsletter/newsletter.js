@@ -11,16 +11,16 @@ const Newsletter = () => {
       '>
       <div className='lg:mx-14 sm:mx-0 flex sm:flex-col lg:flex-row items-center justify-around bg-slate-100 rounded-[25px] p-6 relative z-0 overflow-hidden bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-blue-100 to-blue-50 '>
       <div className='flex flex-col sm:order-2 lg:order-1'>
-      <p className='font-semibold lg:text-2xl sm:text-sm text-blue-500'><span className='text-orange-400 font-bold'>Join Our Newsletter,</span><br/> So That We Can Reach Out <br/> 
+      <p className='font-semibold text-blue-500 lg:text-2xl sm:text-sm'><span className='font-bold text-orange-400'>Join Our Newsletter,</span><br/> So That We Can Reach Out <br/> 
       To You With Our Best News And Offers</p>
       <input className={inputText} type="email" placeholder='Enter Your Email'/>
       <button className='mt-4 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-blue-600 hover:bg-blue-500 hover:shadow-lg w-32'>Subscribe</button>
       </div>
       <div className='flex lg:my-0 sm:my-6 sm:order-1 lg:order-2'>
-      <Image className='' src={imgMail}/>
+      <Image  alt="temp" className='' src={imgMail}/>
       </div>
-      <div className="absolute lg:w-56 lg:h-56 sm:w-40 sm:h-40 rounded-full bg-white/30 -top-10 -left-24 -z-10  shadow-md" />
-    <div className="absolute w-72 h-72 sm:w-56 sm:h-56 rounded-full bg-white/30 -bottom-14 -right-14 -z-10  shadow-md" />
+      <div className="absolute rounded-full shadow-md lg:w-56 lg:h-56 sm:w-40 sm:h-40 bg-white/30 -top-10 -left-24 -z-10" />
+    <div className="absolute rounded-full shadow-md w-72 h-72 sm:w-56 sm:h-56 bg-white/30 -bottom-14 -right-14 -z-10" />
       </div>
   </div>
   )

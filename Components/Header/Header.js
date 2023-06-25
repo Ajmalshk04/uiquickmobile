@@ -51,17 +51,17 @@ const Header = () => {
   const inputText =
     "block lg:w-96 sm:30 px-4 py-2.5 bg-gray-100  text-sm shadow-sm placeholder-slate-500 focus:outline-none";
   return (
-    <header className="sticky top-0 sm:w-full lg:px-28 md:px-6 lg:py-6 sm:px-4 sm:py-2 shadow-lg z-10 bg-white">
+    <header className="sticky top-0 z-10 bg-white shadow-lg sm:w-full lg:px-28 md:px-6 lg:py-6 sm:px-4 sm:py-2">
       <div className="flex items-center justify-between ">
-        <div className="logo flex lg:w-40 sm:w-24 bg-cover bg-center items-center justify-center lg:mt-1 sm:mt-2 ">
+        <div className="flex items-center justify-center bg-center bg-cover logo lg:w-40 sm:w-24 lg:mt-1 sm:mt-2 ">
           <Link href={"/"}>
             <a>
-              <Image src={logo} />
+              <Image alt="temp" src={logo} />
             </a>
           </Link>
         </div>
-        <div className="search sm:hidden lg:inline-block  flex flex-col pl-16 ">
-          <div className=" flex lg:mb-4 sm:mb-0 items-center justify-center  ">
+        <div className="flex flex-col pl-16 search sm:hidden lg:inline-block ">
+          <div className="flex items-center justify-center lg:mb-4 sm:mb-0">
             <input
               type="text"
               className={inputText}
@@ -113,7 +113,7 @@ const Header = () => {
         <div className="flex items-center justify-center ">
           <div className="lg:mr-4 lg:inline-block sm:hidden">
             <button
-              className="flex items-center text-sm font-semibold text-gray-600 p-2 lg:pl-0 sm:pl-28"
+              className="flex items-center p-2 text-sm font-semibold text-gray-600 lg:pl-0 sm:pl-28"
               onClick={() => {
                 setLocationModal(true);
               }}
@@ -128,7 +128,7 @@ const Header = () => {
             </button>
           </div>
           <div>
-            <button className="focus:outline-none sm:hidden lg:inline-flex text-white font-semibold text-base py-2 px-6 rounded-md bg-blue-500 hover:bg-blue-600 drop-shadow-lg hover:shadow-xl">
+            <button className="px-6 py-2 text-base font-semibold text-white bg-blue-500 rounded-md focus:outline-none sm:hidden lg:inline-flex hover:bg-blue-600 drop-shadow-lg hover:shadow-xl">
               Sign Up
             </button>
           </div>
@@ -153,12 +153,12 @@ const Header = () => {
         </div>
       </div>
       {toggleMenu ? (
-        <div className="sm-menu mt-4" data-aos={"fade-up"}>
+        <div className="mt-4 sm-menu" data-aos={"fade-up"}>
           <div className="navLink w-full h-screen flex flex-col p-6 space-y-8 border-t-[2px] border-gray-200 text-base font-semibold text-gray-500  lg:hidden md:hidden ">
           <div className="flex items-center justify-between">
           <div className="lg:mr-4">
             <button
-              className="flex items-center text-base text-blue-500 font-semibold  p-2 rounded-lg border border-blue-500"
+              className="flex items-center p-2 text-base font-semibold text-blue-500 border border-blue-500 rounded-lg"
               onClick={() => {
                 setLocationModal(true);
               }}
@@ -173,7 +173,7 @@ const Header = () => {
             </button>
           </div>
           <div>
-            <button className="focus:outline-none text-white font-semibold text-base py-2 px-6 rounded-md bg-blue-500 hover:bg-blue-600 drop-shadow-lg hover:shadow-xl">
+            <button className="px-6 py-2 text-base font-semibold text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600 drop-shadow-lg hover:shadow-xl">
               Sign Up
             </button>
           </div>
@@ -232,11 +232,11 @@ const Header = () => {
       ) : null}
       {locationModal ? (
         <div >
-          <div className="absolute top-0 left-0 sm:hidden lg:inline-block w-full h-screen bg-gray-800 opacity-50 z-20"></div>
-          <div className="absolute top-0 left-0 w-full flex flex-col items-center bg-white rounded-b-xl opacity-100 z-40" data-aos={"fade-down"} >
+          <div className="absolute top-0 left-0 z-20 w-full h-screen bg-gray-800 opacity-50 sm:hidden lg:inline-block"></div>
+          <div className="absolute top-0 left-0 z-40 flex flex-col items-center w-full bg-white opacity-100 rounded-b-xl" data-aos={"fade-down"} >
             <div className="w-full flex justify-between lg:px-14 sm:px-4 sm:py-4 border-b-[1px] border-gray-200" >
               <div className="w-24">
-                <Image src={logo} />
+                <Image alt="temp" src={logo} />
               </div>
               <div
                 className="flex items-center justify-center text-blue-500 cursor-pointer"
@@ -252,53 +252,53 @@ const Header = () => {
                 Select Your City
               </h1>
             </div>
-            <div className="flex flex-row flex-wrap items-center justify-center lg:gap-4 sm:gap-2 gap-y-0 py-6 lg:px-10 sm:px-2 text-base font-semibold text-gray-600">
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer ">
-                <div className="bg-blue-100/50 rounded-t-full "><Image src={mumbai} /></div>
+            <div className="flex flex-row flex-wrap items-center justify-center py-6 text-base font-semibold text-gray-600 lg:gap-4 sm:gap-2 gap-y-0 lg:px-10 sm:px-2">
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20 ">
+                <div className="rounded-t-full bg-blue-100/50 "><Image alt="temp" src={mumbai} /></div>
                 <h1>Mumbai</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={delhi} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={delhi} />
                 <h1>Delhi</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={pune} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={pune} />
                 <h1>Pune</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={ahmedabad} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={ahmedabad} />
                 <h1>Ahmedabad</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={hyderabad} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={hyderabad} />
                 <h1>Hyderabad</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={kolkata} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={kolkata} />
                 <h1>Kolkata</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={lucknow} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={lucknow} />
                 <h1>Lucknow</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={patna} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={patna} />
                 <h1>Patna</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={banglore} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={banglore} />
                 <h1>Banglore</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={indore} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={indore} />
                 <h1>Indore</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={chennai} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={chennai} />
                 <h1>Chennai</h1>
               </div>
-              <div className="flex flex-col items-center justify-center lg:w-20 sm:w-20 p-2 cursor-pointer">
-                <Image src={jaipur} />
+              <div className="flex flex-col items-center justify-center p-2 cursor-pointer lg:w-20 sm:w-20">
+                <Image alt="temp" src={jaipur} />
                 <h1>Jaipur</h1>
               </div>
             </div>
@@ -309,13 +309,13 @@ const Header = () => {
                   className={inputText}
                   placeholder="Search city by name"
                 />
-                <button className="px-4 py-3 border-2 rounded-r-lg bg-blue-500">
+                <button className="px-4 py-3 bg-blue-500 border-2 rounded-r-lg">
                   <ioSearch size={20} className="text-white" />
                 </button>
               </div>
             </div>
             <div>
-              <p className="text-blue-500 font-medium py-6">
+              <p className="py-6 font-medium text-blue-500">
                 <Link href={"/"}>
                   <a>View All Cities</a>
                 </Link>

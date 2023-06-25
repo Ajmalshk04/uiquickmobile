@@ -9,9 +9,9 @@ import img1 from "../../public/assets/brands-we-deal/samsung.webp";
 const BrandDeal = () => {
   SwiperCore.use([Autoplay])
   return (
-    <div className="lg:container lg:mx-auto mt-8 px-16 py-14">
-        <section className="flex flex-row relative w-full h-auto">
-        <div className='absolute top-0 font-bold text-3xl text-blue-500 w-full '><p>Brands We Deal</p></div>
+    <div className="px-16 mt-8 lg:container lg:mx-auto py-14">
+        <section className="relative flex flex-row w-full h-auto">
+        <div className='absolute top-0 w-full text-3xl font-bold text-blue-500 '><p>Brands We Deal</p></div>
       <Swiper
         spaceBetween={0}
         slidesPerView={10}
@@ -70,7 +70,7 @@ const card=()=>{
            <div className="w-full h-auto rounded-xl">
           <Link href={"/"}>
             <a className="">
-              <Image src={img1}  />
+              <Image alt="temp" src={img1}  />
             </a>
           </Link>
           </div> 

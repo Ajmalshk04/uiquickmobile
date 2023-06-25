@@ -11,8 +11,8 @@ const BrandDeals = () => {
   return (
     <div className="lg:container lg:mx-auto lg:mt-8 sm:mt-4">
         <div className="lg:mx-10 sm:mx-2">
-        <div className='font-bold lg:text-2xl sm:text-xl text-blue-500 w-full lg:text-left sm:pl-4 lg:pl-0 '><p>Brand Deals</p></div>
-        <section className="flex flex-row relative w-full h-auto my-2">
+        <div className='w-full font-bold text-blue-500 lg:text-2xl sm:text-xl lg:text-left sm:pl-4 lg:pl-0 '><p>Brand Deals</p></div>
+        <section className="relative flex flex-row w-full h-auto my-2">
       <Swiper
       speed={3000}
         autoplay={{
@@ -107,7 +107,7 @@ const card=()=>{
            <div className="w-full h-auto rounded-xl">
           <Link href={"/"}>
             <a className="">
-              <Image src={img1}  />
+              <Image alt="temp" src={img1}  />
             </a>
           </Link>
           </div> 

@@ -23,44 +23,44 @@ const Warranty = () => {
       }
   return (
     <div>
-        <div className='flex bg-white shadow-2xl mx-28 my-14 p-10 rounded-2xl'>
-            <div className='w-2/5 flex flex-col items-center justify-center'>
-                <Image src={img}/>
-                <p className='font-semibold text-lg'>Samsung Galaxy</p>
-                <p className='font-semibold text-sm'>Variant</p>
+        <div className='flex p-10 bg-white shadow-2xl mx-28 my-14 rounded-2xl'>
+            <div className='flex flex-col items-center justify-center w-2/5'>
+                <Image alt="temp" src={img}/>
+                <p className='text-lg font-semibold'>Samsung Galaxy</p>
+                <p className='text-sm font-semibold'>Variant</p>
 
                 <div>
-                    <h1 className='font-bold text-xl text-blue-500'>DEVICE EVALUTION DETAILS</h1>
-                    <p className='font-semibold text-lg text-gray-600'>Device Details</p>
+                    <h1 className='text-xl font-bold text-blue-500'>DEVICE EVALUTION DETAILS</h1>
+                    <p className='text-lg font-semibold text-gray-600'>Device Details</p>
                 </div>
             </div>
             <div className='border-l-[1px] border-gray-300 px-10'>
-                <h1 className='font-bold text-2xl text-blue-500 px-4'>{firstTitle}</h1>
-                <ol className='text-lg text-gray-600 p-4'>
+                <h1 className='px-4 text-2xl font-bold text-blue-500'>{firstTitle}</h1>
+                <ol className='p-4 text-lg text-gray-600'>
                 {firstQnA && firstQnA.questionandanswer.map((e) => (
                     <li className='pb-4' key={e.id}>
                     <p>{e.question}</p>
                     <div className='flex gap-6 pt-4'>
                         <input className='hidden peer' type="radio" onChange={onChange}  name={e.question} value={e.answer[0]}  id="yes" />
-                        <label htmlFor="yes" onChange={onChange} className='inline-flex cursor-pointer items-center justify-between px-6 border rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
+                        <label htmlFor="yes" onChange={onChange} className='inline-flex items-center justify-between px-6 border cursor-pointer rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
                             <div className='block'>
                             <div className="text-lg font-semibold">{e.answer[0]}</div>
                             </div>
                         </label>
                         <input className='hidden peer' type="radio" onChange={onChange} name={e.question} value={e.answer[1]}  id="no"/>
-                        <label htmlFor="no" onChange={onChange} className='inline-flex cursor-pointer items-center justify-between px-6 border rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
+                        <label htmlFor="no" onChange={onChange} className='inline-flex items-center justify-between px-6 border cursor-pointer rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
                             <div className='block'>
                             <div className="text-lg font-semibold">{e.answer[1]}</div>
                             </div>
                         </label>
                         <input className='hidden peer' type="radio" onChange={onChange} name={e.question} value={e.answer[2]}  id="no"/>
-                        <label htmlFor="no" onChange={onChange} className='inline-flex cursor-pointer items-center justify-between px-6 border rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
+                        <label htmlFor="no" onChange={onChange} className='inline-flex items-center justify-between px-6 border cursor-pointer rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
                             <div className='block'>
                             <div className="text-lg font-semibold">{e.answer[2]}</div>
                             </div>
                         </label>
                         <input className='hidden peer' type="radio" onChange={onChange} name={e.question} value={e.answer[2]}  id="no"/>
-                        <label htmlFor="no" onChange={onChange} className='inline-flex cursor-pointer items-center justify-between px-6 border rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
+                        <label htmlFor="no" onChange={onChange} className='inline-flex items-center justify-between px-6 border cursor-pointer rounded-xl peer-checked:bg-blue-600 peer-checked:text-white'>
                             <div className='block'>
                             <div className="text-lg font-semibold">{e.answer[3]}</div>
                             </div>

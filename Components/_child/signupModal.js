@@ -10,18 +10,18 @@ const SignupModal = () => {
 const inputText =
 "block w-56 px-4 py-3  border border-slate-300 rounded-lg text-sm shadow-sm placeholder-slate-500 focus:outline-none focus:bg-white focus:ring-2";
   return (
-    <div className=" flex items-center justify-center">
-        <div className="absolute top-0 left-0 w-full h-screen bg-gray-800 opacity-50 z-20"></div>
-        <div className="absolute top-1/4 w-auto flex flex-col items-center justify-center bg-white rounded-xl opacity-100 z-40 p-6">
-        <div className="flex w-full justify-between">
+    <div className="flex items-center justify-center ">
+        <div className="absolute top-0 left-0 z-20 w-full h-screen bg-gray-800 opacity-50"></div>
+        <div className="absolute z-40 flex flex-col items-center justify-center w-auto p-6 bg-white opacity-100 top-1/4 rounded-xl">
+        <div className="flex justify-between w-full">
             <p className="text-2xl font-semibold text-blue-500">SignUp</p>
             <FaTimes size={25} className="cursor-pointer"/>
         </div>
         <div className="">
-            <Image src={img}/>
+            <Image alt="temp" src={img}/>
         </div>
         <div className="flex flex-col items-center gap-4">
-            <p className="font-semibold text-sm text-gray-600">Please Enter Your Mobile Number</p>
+            <p className="text-sm font-semibold text-gray-600">Please Enter Your Mobile Number</p>
             <div className="flex items-center justify-center">
             <FaPhoneAlt size={20} className="mr-4 text-gray-600"/>
             <input type="Number" className={inputText} minLength="10" maxLength="10"  placeholder="Mobile No."/>

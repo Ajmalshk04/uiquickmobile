@@ -6,18 +6,18 @@ import aboutusmob from "../../../public/assets/quick_mobile_hide.webp"
 const AboutUs = () => {
   return (
     <section className='mt-6'>
-      <div className='font-bold lg:text-2xl sm:text-xl text-blue-500 w-full sm:pl-6 lg:pl-16 mb-4 lg:text-left sm:text-center'>
+      <div className='w-full mb-4 font-bold text-blue-500 lg:text-2xl sm:text-xl sm:pl-6 lg:pl-16 lg:text-left sm:text-center'>
         <p >Why Quick Mobile ?</p>
       </div>
       <div className='lg:inline-block sm:hidden'>
-        <Image src={aboutus}/>
+        <Image alt="temp" src={aboutus}/>
       </div>
       <div className='lg:hidden sm:inline-block'>
-        <Image src={aboutusmob}/>
+        <Image alt="temp" src={aboutusmob}/>
       </div>
-      <div className='w-full lg:h-48 sm:h-28 bg-gray-600 flex items-center justify-center'> 
-        <div className='font-semibold lg:text-3xl sm:text-sm text-white px-10 lg:text-left sm:text-center leading-8'>OVER 
-        <span className='lg:ml-4 sm:ml-2 lg:mb-4 lg:w-64 sm:w-24 tracking-wider inline-flex text-orange-400 lg:text-6xl sm:text-xl mr-4'>
+      <div className='flex items-center justify-center w-full bg-gray-600 lg:h-48 sm:h-28'> 
+        <div className='px-10 font-semibold leading-8 text-white lg:text-3xl sm:text-sm lg:text-left sm:text-center'>OVER 
+        <span className='inline-flex mr-4 tracking-wider text-orange-400 lg:ml-4 sm:ml-2 lg:mb-4 lg:w-64 sm:w-24 lg:text-6xl sm:text-xl'>
           <CountUp enableScrollSpy={true} useEasing={true} duration={3} start={210000} end={216158} suffix={"+"} />
           </span> 
         CUSTOMER ACROSS INDIA,<br/>

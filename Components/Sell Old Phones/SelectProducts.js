@@ -4,7 +4,7 @@ import Link from "next/link";
 import img1 from "../../public/assets/upload/apple-iphone-11-1.jpg";
 import { FiSearch } from "react-icons/fi";
 import BrandDeals from "../Home/BrandDeals/branddeals"
-import Topsellingbrands from "../Home/TopSellingModels/topsellingmodels" 
+import Topsellingbrands from "../Home/TopSellingModels/Topsellingmodels" 
 import Breadcrumb from "../_child/Breadcrumb";
 
 // import { productList } from './SelectProducts'
@@ -14,24 +14,24 @@ const SelectProduct = () => {
   const inputText =
     "w-96 px-4 py-0  border border-slate-300 rounded-l-lg text-sm shadow-sm placeholder-slate-500 focus:outline-none focus:bg-white focus:ring-2";
   return (
-    <div className="lg:container mx-auto mt-10 ">
-      <div className="flex lg:flex-row sm:flex-col justify-between lg:px-10 sm:p-4">
+    <div className="mx-auto mt-10 lg:container ">
+      <div className="flex justify-between lg:flex-row sm:flex-col lg:px-10 sm:p-4">
         <div className="flex flex-col lg:inline-block sm:hidden">
-        <h1 className="font-bold text-3xl  text-blue-500 pl-4">
+        <h1 className="pl-4 text-3xl font-bold text-blue-500">
         Sell Old Mobile Phone
       </h1>
       <div>
         <Breadcrumb />
       </div>
         </div>
-        <div className="flex lg:w-1/4 sm:w-full h-12">
+        <div className="flex h-12 lg:w-1/4 sm:w-full">
                 <input type="text bg-gray-300" className={inputText} placeholder="Search..." />
-                    <button className="px-4 py-3 border-2 rounded-r-lg bg-blue-500"><FiSearch  size={20} className="text-white"/></button> 
+                    <button className="px-4 py-3 bg-blue-500 border-2 rounded-r-lg"><FiSearch  size={20} className="text-white"/></button> 
         </div>
       </div>
       <div>
         <div className="lg:mt-14 sm:mt-4 lg:mx-10 sm:mx-0">
-          <h1 className="font-bold lg:text-3xl sm:text-xl text-blue-500 pl-4">
+          <h1 className="pl-4 font-bold text-blue-500 lg:text-3xl sm:text-xl">
             Select Series
           </h1>
           <div className="flex flex-wrap items-center justify-center lg:p-8 sm:p-2 lg:gap-x-6 sm:gap-x-4 lg:gap-y-4 sm:gap-y-2">
@@ -47,11 +47,11 @@ const SelectProduct = () => {
           </div>
         </div>
       </div>
-      <div className=" lg:mx-10 sm:mx-0 mt-10">
-        <h1 className="font-bold lg:text-3xl sm:text-xl text-blue-500 pl-4 ">
+      <div className="mt-10 lg:mx-10 sm:mx-0">
+        <h1 className="pl-4 font-bold text-blue-500 lg:text-3xl sm:text-xl ">
           Select Product
         </h1>
-        <div id="brands" className="flex flex-wrap items-center justify-center lg:gap-x-6 sm:gap-x-0 lg:gap-y-4 sm:gap-y-0 mt-4 lg:px-0 sm:px-2">
+        <div id="brands" className="flex flex-wrap items-center justify-center mt-4 lg:gap-x-6 sm:gap-x-0 lg:gap-y-4 sm:gap-y-0 lg:px-0 sm:px-2">
           {card()}
           {card()}
           {card()}
@@ -76,9 +76,9 @@ const card = () => {
       <Link href={"/"}>
         <a className="flex flex-col items-center justify-center">
           <div className="object-contain ">
-            <Image src={img1}/>
+            <Image alt="temp" src={img1}/>
           </div>
-          <div className="flex flex-wrap sm:text-sm lg:text-base text-center"><p>Iphone 11 pro max</p></div>
+          <div className="flex flex-wrap text-center sm:text-sm lg:text-base"><p>Iphone 11 pro max</p></div>
         </a>
       </Link>
     </div>

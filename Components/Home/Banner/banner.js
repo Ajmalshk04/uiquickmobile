@@ -28,7 +28,7 @@ const Banner = () => {
           <div>
           <Link href={"/"}>
             <a>
-              <Image src={img1}  />
+              <Image alt="temp" src={img1}  />
             </a>
           </Link>
           </div>
@@ -38,7 +38,7 @@ const Banner = () => {
         <div>
           <Link href={"/"}>
             <a>
-              <Image src={img2} />
+              <Image alt="temp" src={img2} />
             </a>
           </Link>
           </div>
@@ -47,7 +47,7 @@ const Banner = () => {
         <div>
           <Link href={"/"}>
             <a>
-              <Image src={img3} />
+              <Image alt="temp" src={img3} />
             </a>
           </Link>
           </div>
@@ -66,7 +66,7 @@ const Banner = () => {
           <div className="rounded-xl">
           <Link href={"/"}>
             <a>
-              <Image src={imgsm1} className="bg-cover bg-center rounded-xl p-4" />
+              <Image alt="temp" src={imgsm1} className="p-4 bg-center bg-cover rounded-xl" />
             </a>
           </Link>
           </div>
@@ -76,7 +76,7 @@ const Banner = () => {
         <div className="rounded-xl">
           <Link href={"/"}>
             <a>
-              <Image src={imgsm2} />
+              <Image alt="temp" src={imgsm2} />
             </a>
           </Link>
           </div>
@@ -85,7 +85,7 @@ const Banner = () => {
         <div className="rounded-xl">
           <Link href={"/"}>
             <a>
-              <Image src={imgsm3} />
+              <Image alt="temp" src={imgsm3} />
             </a>
           </Link>
           </div>
